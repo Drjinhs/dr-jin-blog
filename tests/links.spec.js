@@ -1,0 +1,3 @@
+const {test,expect}=require('@playwright/test');
+test('section links have valid local targets',async({page})=>{await page.goto('/');const links=await page.locator('a[href^="#"]').evaluateAll(as=>as.map(a=>a.getAttribute('href')));for(const href of links)expect(await page.locator(href).count(),href).toBe(1)});
+test('mobile menu opens and closes with Escape',async({page})=>{await page.setViewportSize({width:390,height:844});await page.goto('/');const toggle=page.locator('.menu-toggle');await toggle.click();await expect(toggle).toHaveAttribute('aria-expanded','true');await page.keyboard.press('Escape');await expect(toggle).toHaveAttribute('aria-expanded','false')});

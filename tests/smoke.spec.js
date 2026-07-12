@@ -1,0 +1,2 @@
+const {test,expect}=require('@playwright/test');
+test('loads the main page and semantic landmarks',async({page})=>{const errors=[];page.on('pageerror',e=>errors.push(e.message));const response=await page.goto('/');expect(response.status()).toBe(200);await expect(page.locator('header')).toBeVisible();await expect(page.locator('main')).toBeVisible();await expect(page.locator('footer')).toBeVisible();await expect(page.locator('h1')).toHaveCount(1);expect(errors).toEqual([])});

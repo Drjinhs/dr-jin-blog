@@ -1,0 +1,2 @@
+const {test,expect}=require('@playwright/test');
+for(const viewport of [{name:'desktop',width:1440,height:1200},{name:'tablet',width:768,height:1024},{name:'mobile',width:390,height:844}])test(`visual ${viewport.name}`,async({page})=>{await page.setViewportSize(viewport);await page.goto('/');await expect(page).toHaveScreenshot(`rebuilt-${viewport.name}.png`,{fullPage:true,animations:'disabled'})});
