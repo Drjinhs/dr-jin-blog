@@ -4,7 +4,7 @@ Static personal website and blog for Dr. Jin, focused on open innovation, startu
 
 ## Source and implementation
 
-The requested Lovable preview was inspected on 12 July 2026 but redirected to workspace authentication. The accessible brief and five supplied portraits were therefore used as the authoritative fallback reference. All images are stored locally; the site contains no hotlinked media.
+The requested Lovable preview was inspected through the authorized Chrome profile on 12 July 2026. Its rendered DOM, content sequence, links, interactions, and responsive behavior were used as the implementation reference. The five supplied portraits are stored locally; the site contains no hotlinked media.
 
 The implementation uses semantic HTML5, modular CSS, vanilla JavaScript, and SVG/CSS-generated graphic motifs. It has no production build step or client framework.
 

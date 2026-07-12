@@ -1,6 +1,6 @@
 # Source style analysis
 
-Because the Lovable preview requires workspace authorization, exact computed styles were unavailable. The rebuild uses visual cues from the provided portraits and the brief's expected professional personal-site character.
+The Lovable preview was inspected through the authorized Chrome profile after the isolated browser encountered workspace authentication. The rebuild follows its Korean-first editorial layout, deep navy program panels, warm ivory surfaces, coral accents, compact sans-serif labels, and high-contrast serif headings.
 
 ## Design system
 
